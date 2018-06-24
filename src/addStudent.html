@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar aluno!</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+
+</head>
+
+<body>
+    <h3>Insira os dados do novo aluno</h3>
+
+    <div class="addStudent">
+        <form action="/action_page.php">
+            <label for="studentName">Nome do Aluno </label>
+            <br>
+            <input type="text" id="studentName" name="studentName" placeholder="Maria Batista dos Santos">
+            <br>
+            <label for="serie">Série</label>
+            <select id="serie" name="serie">
+                <option value="6th">6º - Sexto Ano</option>
+                <option value="7th">7º - Sétimo Ano</option>
+                <option value="8th">8º - Oitavo Ano</option>
+                <option value="9th">9º - Nono Ano</option>
+                <option value="1rd">1º - Primeiro Colegial</option>
+                <option value="2rd">2º - Segundo Colegial</option>
+                <option value="3rd">3º - Terceiro Colegial</option>
+            </select>
+
+            <label for="turma">Turma</label>
+            <select id="turma" name="turma">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+            <div class="w3-bar">
+                <input type="submit" value="Adicionar">
+
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // You can also require other files to run in this process
+        require('./renderer.js')
+    </script>
+</body>
+
+</html>

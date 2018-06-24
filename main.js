@@ -3,6 +3,7 @@ const {
   app, BrowserWindow, Menu, dialog,
 } = require('electron');
 
+require('electron-reload')(__dirname);
 const { shell } = require('electron');
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -35,7 +36,7 @@ const menu = Menu.buildFromTemplate([
       {
         label: 'Adicionar Página',
         click() {
-          mainWindow.loadFile('src/addFacebook.html');
+          mainWindow.loadFile('src/addStudent.html');
         },
       },
       {
