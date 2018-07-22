@@ -40,6 +40,12 @@ const menu = Menu.buildFromTemplate([
 				},
 			},
 			{
+				label: 'Adicionar Lembrete',
+				click() {
+					mainWindow.loadFile('src/addReminder.html');
+				},
+			},
+			{
 				type: 'separator',
 			},
 			{

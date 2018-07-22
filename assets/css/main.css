@@ -9,6 +9,17 @@ select {
     box-sizing: border-box;
 }
 
+input[type=date],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 input[type=submit] {
     width: 40%;
     background-color: #89C4F4;
@@ -43,6 +54,15 @@ input[type=reset]:hover {
 }
 
 .addStudent {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    padding-bottom: 50px;
+    margin-left: 2%;
+    margin-right: 40%;
+}
+
+.addReminder {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
